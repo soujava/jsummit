@@ -311,8 +311,8 @@ hr{
 
 .social a i{
    display:inline-block;
-   width:40px;
-   height:40px;
+   width:25px;
+   height:25px;
    font-size:15px !important;
    line-height:40px;
    text-decoration:none;
@@ -326,18 +326,26 @@ hr{
 }
 .social a.facebook i{
 	background:#1e78ae;
+	background-image: url('../img/facebook.png');
+	background-repeat: no-repeat
 }
 
 .social a.twitter i{
 	background:#1ba1e2;
+	background-image: url('../img/twitter.png');
+	background-repeat: no-repeat
 }
 
 .social a.google-plus i{
 	background:#f22d0c;
+	background-image: url('../img/google_plus.png');
+	background-repeat: no-repeat
 }
 
 .social a.linkedin i{
 	background:#2d93cf;
+	background-image: url('../img/linkedin.png');
+	background-repeat: no-repeat
 }
 
 .social a:hover i{
