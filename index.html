@@ -1,67 +1,285 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-        <title>JVM Brasil</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
-		  <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-    </head>
-    <body>
+<html lang="pt-br">
+<head>
+  <title>JVM Brasil - Evento sobre JVM da comunidade para comunidade</title>
+  <link data-turbolinks-track="true" href="assets/application.css" media="all" rel="stylesheet" />
+  <link data-turbolinks-track="true" href="assets/normalize.css" media="all" rel="stylesheet" />
+  <script data-turbolinks-track="true" src="assets/jquery.js"></script>
+  <script data-turbolinks-track="true" src="assets/jquery_ujs.js"></script>
+  <script data-turbolinks-track="true" src="assets/turbolinks.js"></script>
+  <script data-turbolinks-track="true" src="assets/home.js"></script>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="pt-br" />
     
-        <div class="container">
-        		<img src="img/pipe_duke.png" alt="JVM summit brasil">
-        		JVM Brasil - Falando de JVM em 25 de outubro na PUC-SP Consolação.
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
-                <li><a href="#progromacao" role="tab" data-toggle="tab">Programação</a></li>
-                <li><a href="#local" role="tab" data-toggle="tab">Local</a></li>
-                <li><a href="#palestras" role="tab" data-toggle="tab">Palestras</a></li>
-                <li><a href="#palestrantes" role="tab" data-toggle="tab">Palestrantes</a></li>
-            </ul>
+  <meta http-equiv="Cache-Control" content="public, max-age=31536000" />
+  <meta http-equiv="expires" content="Mon, 01 Jan 2016 00:00:01 GMT" />
+
+  <meta name="keywords" content="jvmsummit, brazil, jvm, jvm-brasil, evento, brasil, java, opensource, soujava, otavio, openjdk" />
+  <meta name="description" content="JVM Brasil - Evento sobre JVM da comunidade para comunidade">
+  <link rel="canonical" href="https://soujava.github.io/jvm-brasil/" />
+  <!-- modernizr para suportar browsers antigos-->
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">    
+</head>
+<body>
 
 
 
-            <div class="tab-content">
 
-                <div class="tab-pane active" id="home">
-                    <div id="divHome"></div>
-                    <script>
-                        $("#divHome").load("pages/home.html");
-                    </script>
-                </div>
-
-                <div class="tab-pane" id="progromacao">
-                    <div id="divProgramacao"></div>
-                    <script>
-                        $("#divProgramacao").load("pages/programacao.html");
-                    </script>
-                </div>
-
-               <div class="tab-pane" id="local">
-                    <div id="divLocal"></div>
-                    <script>
-                        $("#divLocal").load("pages/local.html");
-                    </script>
-                </div>
-
-                <div class="tab-pane" id="palestras">
-                    <div id="divPalestras"></div>
-                    <script>
-                        $("#divPalestras").load("pages/palestras.html");
-                    </script>
-                </div>
-
-                <div class="tab-pane" id="palestrantes">
-                    <div id="divPalestrantes"></div>
-                    <script>
-                        $("#divPalestrantes").load("pages/palestrantes.html");
-                    </script>
-                </div>
-            </div>
+<!-- Default header para as paginas  -->
+<header class="navigation">
+  <div class="navigation-wrapper">
+    <a href="javascript:void(0)" class="logo">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="">
+    </a>
+    <a href="index.html" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <div class="nav">
+      <ul id="navigation-menu">
+        <li class="nav-link"><a href="javascript:void(0)">Home</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">Quem somos</a></li>
+        <li class="nav-link more"><a href="javascript:void(0)">Evento</a>
+          <ul class="submenu">
+            <li><a href="javascript:void(0)">Grade</a></li>
+            <li><a href="javascript:void(0)">Palestras</a></li>
+            <li><a href="javascript:void(0)">Palestrantes</a></li>
+            <li><a href="javascript:void(0)">Data e Local</a></li>
+            <li class="more"><a href="javascript:void(0)">Mais</a>
+              <ul class="submenu">
+                <li><a href="javascript:void(0)">Fotos</a></li>
+                <li><a href="javascript:void(0)">Slides</a></li>
+                <li><a href="javascript:void(0)">Videos</a></li>
+              </ul>
+            </li>            
+          </ul>
+        </li>  
+        <li class="nav-link"><a href="javascript:void(0)">Inscreva-se</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">Apoio</a></li>
+      </ul>
+    </div>
+    <div class="navigation-tools">
+      <div class="search-bar">
+        <div class="search-and-submit">
+          <input type="search" placeholder="Busca no site" /><!-- configurar o google custom search -->
+          <button type="submit">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Pesquise no site">
+          </button>
         </div>
-    </body>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Tambem da Home   -->
+<div class="hero">
+	<div class="hero-inner">
+    <a href="index.html" class="hero-logo"><img src="https://soujava.github.io/jvm-brasil/img/pipe_duke.png
+" alt=""></a>
+		<div class="hero-copy">
+			<h1>Venha aprender e compartilhar conhecimento sobre JVM</h1>
+			<p>Evento conta com grandes nomes da comunidade Java além de claro sua participação! Traga dúvida e sugestões que esse evento foi feito apra você. Se encontramos no dia 25 de outubro na PUC! Não se esqueça de compartilhar =)</p>	
+		</div>
+    <button>Mais detalhes</button> <!-- link para Quem somos -->
+	</div>
+</div>
+
+
+
+
+
+<!-- Outra página html, usado para grade   -->
+<div class="refills-wrapper">
+<table class="table-borders">
+  <thead>
+    <tr>
+      <th>Header Cell 1</th>
+      <th>Header Cell 2</th>
+      <th>Header Cell 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Row 1 Cell 1</td>
+      <td>Row 1 Cell 2</td>
+      <td><button>Confirm</button><button>Reject</button></td>
+    </tr>
+    <tr>
+      <td>Row 2 Cell 1</td>
+      <td>Row 2 Cell 2</td>
+      <td><button>Confirm</button><button>Reject</button></td>
+    </tr>
+    <tr>
+      <td>Row 3 Cell 1</td>
+      <td>Row 3 Cell 2</td>
+      <td><button>Confirm</button><button>Reject</button></td>
+    </tr>
+    <tr>
+      <td>Row 4 Cell 1 <div class="badges"><span class="badge">4</span></div></td>
+      <td>Row 4 Cell 2</td>
+      <td><button>Confirm</button><button>Reject</button></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+
+
+<!-- exemplo de tooltip   -->
+<div class="tooltip-item">
+  Hover for Tooltip
+  <div class="tooltip">
+    <p>Lorem ipsum doloandae oluptate aperiam unde voluptates quas.</p>
+  </div>
+</div>
+
+<!-- exemplo de badges , pode ser usado para a gente rotular o que uma palestra aborda ou o grau de complexidade  -->
+<div class="badges">
+	<span class="badge">4</span>
+	<span class="badge dark">4</span>
+	<span class="badge error">4</span>
+	<span class="badge notice">4</span>
+	<span class="badge success">4</span>
+</div>
+
+
+
+
+<!-- Pagina dos palestrantes - pensei em usar o design abaixo para colocar os palestrantes  e seus links para redes socias   -->
+<div class="cards">
+  <div class="card">
+    <div class="card-image">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+    </div>
+    <div class="card-header">
+      First Card
+    </div>
+    <div class="card-copy">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
+    </div>
+    <div class="card-stats">
+      <ul>
+        <li>98<span>Items</span></li>
+        <li>298<span>Things</span></li>
+        <li>923<span>Objects</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ribbon-wrapper"><div class="ribbon">RIBBON</div></div>
+    <div class="card-image">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-4.png" alt="">
+    </div>
+    <div class="card-header">
+      Another Card
+    </div>
+    <div class="card-copy">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
+    </div>
+    <div class="card-stats">
+      <ul>
+        <li>98<span>Items</span></li>
+        <li>298<span>Things</span></li>
+        <li>923<span>Objects</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-image">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-3.png" alt="">
+    </div>
+    <div class="card-header">
+      The Last Card
+    </div>
+    <div class="card-copy">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
+    </div>
+    <div class="card-stats">
+      <ul>
+        <li>98<span>Items</span></li>
+        <li>298<span>Things</span></li>
+        <li>923<span>Objects</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- exemplo de modal  -->
+<div class="modal">
+  <label for="modal-1">
+    <div class="btn js-btn">Click for Modal</div>
+  </label>
+  <input class="modal-state" id="modal-1" type="checkbox" />
+  <div class="modal-window">
+    <div class="modal-inner">
+      <label class="modal-close" for="modal-1"></label>
+      <h1>Modal Title</h1>
+      <p class="intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
+      <p class="body">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Default footer para as paginas  -->
+<footer class="footer">
+  <div class="footer-logo">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="">
+  </div>
+  <div class="footer-links">
+    <ul>
+      <li><h3>Conteúdo</h3></li>
+      <li><a href="javascript:void(0)">Home</a></li>
+      <li><a href="javascript:void(0)">Quem somos</a></li>
+      <li><a href="javascript:void(0)">Local</a></li>
+    </ul>
+    <ul>
+      <li><h3>Siga a gente</h3></li>
+      <li><a href="javascript:void(0)">Facebook</a></li>
+      <li><a href="javascript:void(0)">Twitter</a></li>
+      <li><a href="javascript:void(0)">YouTube</a></li>
+<!-- Ver de colocar tb:
+linkedin
+lanyrd
+flickr
+g+      
+slideshare
+speakerdeck
+
+
+Ver tb de usar agora (ou na prox)
+http://www.google.com/google-d-s/createforms.html
+http://call4paperz.com/
+google maps
+
+
+Posso pegar outros componentes do http://refills.bourbon.io
+-->
+    </ul>
+    <ul>
+      <li><h3>Legal</h3></li>
+      <li><a href="javascript:void(0)">Licença do site</a></li> <!-- Página com referencia ao github e das tencologias suadas do site e da licença usada -->
+      <li><a href="javascript:void(0)">Disclaimer</a></li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <p>Disclaimer: Esse site não representa nenhuma ideia das organizações vinculadas aos palestrantes, sendo os conteúdos um reflexo da opiniões pessoais do palestrantes.</p>
+</footer>
+</body>
+</html>
+
+
+</body>
 </html>
