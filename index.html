@@ -10,66 +10,41 @@
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </head>
-    <body>
-    
-        <div class="container">
-        		<img src="img/pipe_duke.png" alt="JVM summit brasil">
-        		JVM Brasil - Falando de JVM em 24-25 de outubro na PUC-SP Consolação.
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
-                <li><a href="#progromacao" role="tab" data-toggle="tab">Programação</a></li>
-                <li><a href="#workshop" role="tab" data-toggle="tab">Workshop</a></li>
-                <li><a href="#local" role="tab" data-toggle="tab">Local</a></li>
-                <li><a href="#palestras" role="tab" data-toggle="tab">Palestras</a></li>
-                <li><a href="#palestrantes" role="tab" data-toggle="tab">Palestrantes</a></li>
-            </ul>
-
-
-
-            <div class="tab-content">
-
-                <div class="tab-pane active" id="home">
-                    <div id="divHome"></div>
-                    <script>
-                        $("#divHome").load("pages/home.html");
-                    </script>
-                </div>
-
-                <div class="tab-pane" id="progromacao">
-                    <div id="divProgramacao"></div>
-                    <script>
-                        $("#divProgramacao").load("pages/programacao.html");
-                    </script>
-                </div>
-
-                <div class="tab-pane" id="workshop">
-                    <div id="divWorkshop"></div>
-                    <script>
-                        $("#divWorkshop").load("pages/workshop.html");
-                    </script>
-                </div>
-
-                <div class="tab-pane" id="local">
-                    <div id="divLocal"></div>
-                    <script>
-                        $("#divLocal").load("pages/local.html");
-                    </script>
-                </div>
-
-                <div class="tab-pane" id="palestras">
-                    <div id="divPalestras"></div>
-                    <script>
-                        $("#divPalestras").load("pages/palestras.html");
-                    </script>
-                </div>
-
-                <div class="tab-pane" id="palestrantes">
-                    <div id="divPalestrantes"></div>
-                    <script>
-                        $("#divPalestrantes").load("pages/palestrantes.html");
-                    </script>
-                </div>
-            </div>
+    <body role="document">
+<!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bootstrap theme</a>
         </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#programacao">Programação</a></li>
+            <li><a href="#workshop">Workshop</a></li>
+            <li><a href="#local">Local</a></li>
+            <li><a href="#palestras">Palestras</a></li>
+            <li><a href="#palestrantes">Palestrantes</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        		<img src="img/pipe_duke.png" alt="JVM summit brasil">
+        		<h1>JVM Brasil</h1>
+	<p>Falando de JVM em 24-25 de outubro na PUC-SP Consolação.</p>
+      </div>
+    </div>
+    
     </body>
 </html>
