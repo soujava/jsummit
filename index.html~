@@ -4,7 +4,9 @@
   <title>JVM Brasil - Evento sobre JVM da comunidade para comunidade</title>
   <link data-turbolinks-track="true" href="assets/application.css" media="all" rel="stylesheet" />
   <link data-turbolinks-track="true" href="assets/normalize.css" media="all" rel="stylesheet" />
-  <script data-turbolinks-track="true" src="assets/jquery.js"></script>
+  <script data-turbolinks-track="true" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script data-turbolinks-track="true" src="https://raw.githubusercontent.com/cowboy/jquery-hashchange/v1.3/jquery.ba-hashchange.min.js"></script>
+
   <script data-turbolinks-track="true" src="assets/jquery_ujs.js"></script>
   <script data-turbolinks-track="true" src="assets/turbolinks.js"></script>
   <script data-turbolinks-track="true" src="assets/home.js"></script>
@@ -69,6 +71,7 @@
 </header>
 
 
+
 <div class="hero">
 	<div class="hero-inner">
     <a href="index.html" class="hero-logo"><img src="https://soujava.github.io/jvm-brasil/img/pipe_duke.png
@@ -80,7 +83,6 @@
     <a href="quemsomos.html"><button>Mais detalhes</button></a>
 	</div>
 </div>
-
 
 <footer class="footer">
   <div class="footer-logo">
@@ -117,9 +119,5 @@
 
   <p>Disclaimer: Esse site não representa nenhuma ideia das organizações vinculadas aos palestrantes, sendo os conteúdos um reflexo da opiniões pessoais do palestrantes.</p>
 </footer>
-</body>
-</html>
-
-
 </body>
 </html>
