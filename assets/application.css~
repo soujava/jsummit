@@ -16,25 +16,25 @@
 }
 .social a.facebook i{
 	background:#1e78ae;
-	background-image: url('imgs/facebook.png');
+	background-image: url('img/facebook.png');
 	background-repeat: no-repeat
 }
 
 .social a.twitter i{
 	background:#1ba1e2;
-	background-image: url('imgs/twitter.png');
+	background-image: url('img/twitter.png');
 	background-repeat: no-repeat
 }
 
 .social a.google-plus i{
 	background:#f22d0c;
-	background-image: url('imgs/google_plus.png');
+	background-image: url('img/google_plus.png');
 	background-repeat: no-repeat
 }
 
 .social a.linkedin i{
 	background:#2d93cf;
-	background-image: url('imgs/linkedin.png');
+	background-image: url('img/linkedin.png');
 	background-repeat: no-repeat
 }
 

@@ -85,34 +85,6 @@
 <p>Quando não está em um computador, Bruno curte o seu tempo com a família em um pequeno esconderijo próximo a São Paulo. Amador em varias atividades -- fotografia, fantoches, pai -- ele tenta ter sucesso em algumas delas.</p>
 <p>
         <div class="social">
-            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        </div>
-</p>
-</article>
-<div style="border-bottom: 1px solid #CACACA;"></div>
-
-<article class="type-system-slab">
-  <h1>Otávio Santana</h1>
-  <p>Desenvolvedor entusiasta do mundo Open Source. Praticante da filosofia ágil e do desenvolvimento poliglota na Bahia, JUG Leader do JavaBahia, membro do SouJava, um dos fomentadores do grupo LinguÁgil. Presente nos maiores eventos Java e ágil em nível nacional, contribui para o projeto OpenJDK e a plataforma JSE, criador do Apache Easy-Cassandra, presente na comunidade Java mundial, membro ativo e/ou moderador dos maiores fóruns de língua portuguesa do mundo além de escrever artigos para DevMedia, revista espírito livre e java.net.</p>
-<p>
-        <div class="social">
-            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="http://twitter.com/otaviojava" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        </div>
-</p>
-</article>
-<div style="border-bottom: 1px solid #CACACA;"></div>
-
-<article class="type-system-slab">
-  <h1>Fabiano Vicente dos Santos</h1>
-  <p>Fabiano Vicente dos Santos.</p>
-<p>
-        <div class="social">
             <a href="https://www.facebook.com/brunocborges" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
             <a href="http://twitter.com/brunoborges" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
             <a href="https://plus.google.com/u/0/+BrunoBorges/posts" target="_blank" class="google-plus"><i class="fa fa-google-plus"></i></a>
@@ -123,30 +95,26 @@
 <div style="border-bottom: 1px solid #CACACA;"></div>
 
 <article class="type-system-slab">
+  <h1>Otávio Santana</h1>
+  <p>Desenvolvedor entusiasta do mundo Open Source. Praticante da filosofia ágil e do desenvolvimento poliglota na Bahia, JUG Leader do JavaBahia, membro do SouJava, um dos fomentadores do grupo LinguÁgil. Presente nos maiores eventos Java e ágil em nível nacional, contribui para o projeto OpenJDK e a plataforma JSE, criador do Apache Easy-Cassandra, presente na comunidade Java mundial, membro ativo e/ou moderador dos maiores fóruns de língua portuguesa do mundo além de escrever artigos para DevMedia, revista espírito livre e java.net.</p>
+</article>
+<div style="border-bottom: 1px solid #CACACA;"></div>
+
+<article class="type-system-slab">
+  <h1>Fabiano Vicente dos Santos</h1>
+  <p>Fabiano Vicente dos Santos.</p>
+</article>
+<div style="border-bottom: 1px solid #CACACA;"></div>
+
+<article class="type-system-slab">
   <h1>Luan Cestari</h1>
   <p>Já ficou em dúvida porque o Java você tem que compilar e mesmo assim ele não gera código nativo? Sabia que não existe somente uma implementação de JVM? Gostaria de saber como funciona alguns comportamentos internos que a JVM executa por abaixo dos panos enquanto compila/roda seu código? Se você respondeu um sim para essa palestra ou se você está curioso em saber o que mais sobre o assunto, venha asistir essa palestra. Vamos ver isso e muito muitos detalhes de tuning que você pode fazer e até analisar sua aplicação java.</p>
-<p>
-        <div class="social">
-            <a href="https://www.facebook.com/luan.cestari" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="https://twitter.com/@BR_LuanCestari" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-            <a href="https://plus.google.com/u/0/+LuanCestari/posts" target="_blank" class="google-plus"><i class="fa fa-google-plus"></i></a>
-            <a href="https://www.linkedin.com/pub/luan-cestari/54/833/568" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        </div>
-</p>
 </article>
 <div style="border-bottom: 1px solid #CACACA;"></div>
 
 <article class="type-system-slab">
   <h1>Ricardo Martinelli Oliveira</h1>
   <p>Ricardo Martinelli de Oliveira has 9+ years of support and Java development experience and working for companies like IBM and Ericsson, and is now Senior Technical Support Enginner for Red Hat, providing development support for customer in Web Frameworks and Hibernate/JPA and helping customer in troubleshooting production applications. Also, he is helping the team spread knowledge about OpenShift in Brazil, presenting in events for a local JUG in Sao Jose dos Campos and in Sao Paulo events like TDC (The Developers Conference) and JustJava. In his blog(http://aprendendo-cloud-computing.blogspot.com) he tries to provide a better experience about Openshift development and concepts about Cloud Computing in general.</p>
-<p>
-        <div class="social">
-            <a href="https://www.facebook.com/rimolive" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="https://twitter.com/rimolive" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-            <a href="https://plus.google.com/u/0/+RicardoMartinelliOliveira/posts" target="_blank" class="google-plus"><i class="fa fa-google-plus"></i></a>
-            <a href="https://www.linkedin.com/in/rmartinelli" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        </div>
-</p>
 </article>
 <div style="border-bottom: 1px solid #CACACA;"></div>  
 
@@ -159,29 +127,12 @@
 <article class="type-system-slab">
   <h1>QMX</h1>
   <p>Douglas "Qmx" Campos  é um desenvolvedor da velha guarda - viciado em opensource, é o criador do dynjs, membro do core team do JRuby, e contribui para diversos projetos, como o TorqueBox, jitescript, invokebinder e muitos outros. Atualmente é o Project Lead do AeroGear na Red Hat, ajudando a aproximar a geração Mobile ao mundo Enterprise. Twitter : @qmx</p>
-<p>
-        <div class="social">
-            <a href="https://www.facebook.com/qmx.me" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="http://twitter.com/qmx" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-
-            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        </div>
-</p>
 </article>
 <div style="border-bottom: 1px solid #CACACA;"></div>  
 
 <article class="type-system-slab">
   <h1>Bruno Borges</h1>
   <p>Gerente de Produtos da Oracle na linha Java EE como GlassFish e WebLogic. Profissional da área há 10 anos, atuou em empresas como EDS/HP, CETIP, Summa Technologies, CETIP, Neociclo e agora arquiteto de sistemas na wdev; desenvolve softwares e soluções em padrões de integração (EIPs), aplicativos Web e aplicativos Android. Participante de comunidades de software livre (RioJUG, SouJava, Apache Software Foundation, #horaextra), fundou o grupo Wicket em Português e contribui para projetos Open Source da ASF.</p>
-<p>
-        <div class="social">
-            <a href="https://www.facebook.com/brunocborges" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="http://twitter.com/brunoborges" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-            <a href="https://plus.google.com/u/0/+BrunoBorges/posts" target="_blank" class="google-plus"><i class="fa fa-google-plus"></i></a>
-            <a href="https://www.linkedin.com/in/brunocborges" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        </div>
-</p>
 </article>
 <div style="border-bottom: 1px solid #CACACA;"></div> 
           
