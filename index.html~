@@ -71,7 +71,7 @@
 </header>
 
 <div class="main-content">
-<div class="guts">
+<div id="guts">
 
 <div class="hero">
 	<div class="hero-inner">
