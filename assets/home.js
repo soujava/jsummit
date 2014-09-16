@@ -1,12 +1,12 @@
 /*
- * jQuery hashchange event - v1.3 - 7/21/2010
- * http://benalman.com/projects/jquery-hashchange-plugin/
- * 
- * Copyright (c) 2010 "Cowboy" Ben Alman
- * Dual licensed under the MIT and GPL licenses.
- * http://benalman.com/about/license/
+ *  jQuery Hashchange - v1.0.0
+ *  A plugin which allows to bind callbacks to custom window.location.hash (uri fragment id) values.
+ *  https://github.com/apopelo/jquery-hashchange
+ *
+ *  Made by Andrey Popelo
+ *  Under MIT License
  */
-(function($,e,b){var c="hashchange",h=document,f,g=$.event.special,i=h.documentMode,d="on"+c in e&&(i===b||i>7);function a(j){j=j||location.href;return"#"+j.replace(/^[^#]*#?(.*)$/,"$1")}$.fn[c]=function(j){return j?this.bind(c,j):this.trigger(c)};$.fn[c].delay=50;g[c]=$.extend(g[c],{setup:function(){if(d){return false}$(f.start)},teardown:function(){if(d){return false}$(f.stop)}});f=(function(){var j={},p,m=a(),k=function(q){return q},l=k,o=k;j.start=function(){p||n()};j.stop=function(){p&&clearTimeout(p);p=b};function n(){var r=a(),q=o(m);if(r!==m){l(m=r,q);$(e).trigger(c)}else{if(q!==m){location.href=location.href.replace(/#.*/,"")+q}}p=setTimeout(n,$.fn[c].delay)}$.browser.msie&&!d&&(function(){var q,r;j.start=function(){if(!q){r=$.fn[c].src;r=r&&r+a();q=$('<iframe tabindex="-1" title="empty"/>').hide().one("load",function(){r||l(a());n()}).attr("src",r||"javascript:0").insertAfter("body")[0].contentWindow;h.onpropertychange=function(){try{if(event.propertyName==="title"){q.document.title=h.title}}catch(s){}}}};j.stop=k;o=function(){return a(q.location.href)};l=function(v,s){var u=q.document,t=$.fn[c].domain;if(v!==s){u.title=h.title;u.open();t&&u.write('<script>document.domain="'+t+'"<\/script>');u.close();q.location.hash=v}}})();return j})()})(jQuery,this);
+!function(a){var b={init:function(b){var c=a.extend({hash:"",onSet:function(){},onRemove:function(){}},b);return c.hash?(a.hashchange||(a.hashchange={},a.hashchange.onSet={},a.hashchange.onRemove={},a.hashchange.prevHash="",a.hashchange.listener=function(){if(window.location.hash!==a.hashchange.prevHash){var b=a.hashchange.onRemove[a.hashchange.prevHash],c=a.hashchange.onSet[window.location.hash];b&&b(),c&&c(),a.hashchange.prevHash=window.location.hash}},this.bind("hashchange",a.hashchange.listener)),a.hashchange.onSet[c.hash]=c.onSet,a.hashchange.onRemove[c.hash]=c.onRemove,window.location.hash===c.hash&&window.location.hash!==a.hashchange.prevHash&&a.hashchange.listener(),this):this}};a.fn.hashchange=function(a){if("[object Array]"===Object.prototype.toString.call(a)){for(var c=a.length-1;c>=0;c--)b.init.apply(this,[a[c]]);return this}return b.init.apply(this,arguments)}}(jQuery);
 
 (function() {
   
@@ -24,7 +24,7 @@ $(document).ready(function() {
     });
   });
 
-  // underline under the active nav item
+  // move to when haschange event
   $(".nav .nav-link").click(function() {
     $(".nav .nav-link").each(function() {
       $(this).removeClass("active-nav-item");
@@ -37,5 +37,31 @@ $(document).ready(function() {
 
 
 }).call(this);
+
+
+
+$(function() {
+    var newHash = "", $mainContent = $(".main-content");
+
+    $(".nav-link").delegate("a", "click", function() {
+if($(this).hasClass("external"))return;
+        window.location.hash = $(this).attr("href");
+        return false;
+    });
+    
+    $(window).bind('hashchange', function(){
+        newHash = window.location.hash.substring(1);
+        if (newHash) {
+          $mainContent.hide().load(newHash + " .main-content > .page-content", function() {
+             $mainContent.fadeIn(200);
+           });
+           $(".nav .nav-link").each(function() {
+             $(this).removeClass("active-nav-item");
+           });
+           $(".nav .nav-link a[href='"+newHash+"']").addClass("active-nav-item");
+        }
+    });
+    $(window).trigger('hashchange');
+});
 
 
