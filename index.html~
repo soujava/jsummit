@@ -73,18 +73,9 @@
 
 
 
-
-<!-- 
-Ver tb de usar agora (ou na prox)
-http://www.google.com/google-d-s/createforms.html para pesquisa de quais temas e etc
-http://call4paperz.com/
-google maps
-Posso pegar outros componentes do http://refills.bourbon.io
--->
-
 <div class="hero">
 	<div class="hero-inner">
-    <a href="index.html" class="hero-logo"><img src="assets/imgs/pipe_duke.png" alt=""></a>
+    <a href="index.html" class="hero-logo"><img src="assets/imgs/pipe_duke.png" alt="Duke (mascote do java) mexendo em canos internos (simbolizando o tunning de JVM)"></a>
 		<div class="hero-copy">
 			<h1>Venha aprender e compartilhar conhecimento sobre JVM</h1>
 			<p>Evento conta com grandes nomes da comunidade Java além de claro sua participação! Traga dúvida e sugestões que esse evento foi feito apra você. Se encontramos no dia 25 de outubro na PUC! Não se esqueça de compartilhar =)</p>	
@@ -92,8 +83,6 @@ Posso pegar outros componentes do http://refills.bourbon.io
     <a href="quemsomos.html"><button>Mais detalhes</button></a>
 	</div>
 </div>
-
-
 
 
 
@@ -110,7 +99,7 @@ Posso pegar outros componentes do http://refills.bourbon.io
       <li><h3>Conteúdo</h3></li>
       <li><a href="index.html">Home</a></li>
       <li><a href="quemsomos.html">Quem somos</a></li>
-      <li><a href="dataelocal.html">Local</a></li>
+      <li><a href="local.html">Local</a></li>
     </ul>
     <ul>
       <li><h3>Siga a gente</h3></li>

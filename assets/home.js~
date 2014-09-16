@@ -43,8 +43,7 @@ $(document).ready(function() {
 $(function() {
     var newHash = "", $mainContent = $(".main-content");
 
-    $(".nav-link").delegate("a", "click", function() {
-if($(this).hasClass("external"))return;
+    $(".nav-link").delegate("a + :not(.external)", "click", function() {
         window.location.hash = $(this).attr("href");
         return false;
     });
